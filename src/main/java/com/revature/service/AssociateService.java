@@ -12,6 +12,12 @@ public class AssociateService implements AssociateInterfaceService {
     private AssociateDaoInterface associateDaoInterface;
 
     @Override
+    public int addAssociateService(Associate associate) {
+        associateDaoInterface.save(associate);
+        return 1;
+    }
+
+    @Override
     public List<Associate> showAssociateService() {
         return associateDaoInterface.findAll();
     }
