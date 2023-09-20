@@ -3,15 +3,12 @@ package com.revature.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.DependsOn;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import com.revature.dao.AssociateDaoInterface;
 import com.revature.entity.Associate;
+import com.revature.service.AssociateInterfaceService;
 
-@DependsOn("AssociateInterfaceService")
-@Component
 @Service
 public class AssociateService implements AssociateInterfaceService {
 
